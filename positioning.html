@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            border: 1px solid rgb(0, 179, 255);
+            background-color: rgb(209, 207, 207);
+            flex: 0 0 content;
+            flex-direction: row;
+        }
+
+        main {
+            display: flex;
+        }
+
+        section {
+            width: 69%;
+            border: 1px solid red;
+        }
+
+        .aside {
+            border: 1px solid blue;
+            background-color: rgb(195, 251, 220);
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            border: 1px solid green;
+            background-color: rgb(194, 191, 191);
+            flex: 0 0 content;
+            flex-direction: row;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        p {
+            background-color: rgb(250, 221, 151);
+        }
+
+        .flexcontainer1 {
+            display: flex;
+            height: 300px;
+            border: 1px solid red;
+            flex-grow: 2;
+            flex-direction: column;
+            align-content: center;
+        }
+
+        .flexcontainer1>h3 {
+            align-self: center;
+        }
+
+        .flexcont2 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .flexp1 {
+            width: 45%;
+            height: 50px;
+        }
+
+        .flexp2 {
+            width: 45%;
+            height: 50px;
+        }
+
+        .flexp3 {
+            height: 50px;
+            width: 95%;
+            align-self: center;
+        }
+
+        .flexs {
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Positioning</h1>
+    <header>
+        Header
+    </header>
+    <main>
+        <div class="flexcontainer1">
+            <h3>Основная часть</h3>
+            <div class="flexcont2">
+                <p class="flexp1">Article 1</p>
+                <p class="flexp2">Article 2</p>
+            </div>
+            <p class="flexp3">Article 3</p>
+        </div>
+        <div class="aside">
+            <h3>Боковая часть</h3>
+        </div>
+    </main>
+
+    <br />
+    <br />
+    <footer>
+        <section class="flexs">Section 1</section>
+        <section class="flexs">Section 2</section>
+        <section class="flexs">Section 3</section>
+        <section class="flexs">Section 4</section>
+    </footer>
+</body>
+
+</html>
